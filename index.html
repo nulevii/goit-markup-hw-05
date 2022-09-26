@@ -50,8 +50,18 @@
 
     <section class="section order-section">
       <h1 class="order-section-sign">Ефективні рішення для вашого бізнесу</h1>
-      <button class="order-section-button" type="button">Замовити послугу</button>
+      <button data-modal-open class="order-section-button" type="button">Замовити послугу</button>
     </section>
+    <div data-modal class="modal-window-container is-hidden">
+      <div  class="modal-window ">
+        <button type="button" data-modal-close class="modal-window-button">
+
+                        <svg class="figure-svg-image" height="18" width="18">
+                          <use href="./images/icons.svg#modal-close-icon"></use>
+                        </svg>
+        </button>
+      </div>
+    </div>
 
     <section class="section features-section">
       <div class="container">
@@ -104,17 +114,20 @@
       <div class="container">
         <h2 class="about-us-sign">Чим ми займаємося</h2>
         <ul class="about-us-list">
-          <li>
+          <li class="about-us-list-element">
             <img class="about-us-image" src="./images/about_us/about_us_one.jpg" alt="Програмування" height="294"
               width="370">
+              <p class="about-us-text">Десктопні додатки</p>
           </li>
-          <li>
+          <li class="about-us-list-element">
             <img class="about-us-image" src="./images/about_us/about_us_two.jpg" alt="Мобільна розробка" height="294"
               width="370">
+              <p class="about-us-text">Мобільні додатки</p>
           </li>
-          <li>
+          <li class="about-us-list-element">
             <img class="about-us-image" src="./images/about_us/about_us_three.jpg" alt="Дизайн" height="294"
               width="370">
+              <p class="about-us-text">Дизайнерські рішення</p>
           </li>
         </ul>
       </div>
@@ -389,6 +402,7 @@
     </div>
   </footer>
 
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
